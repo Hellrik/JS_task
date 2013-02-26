@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="css/nivo-slider.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <title>Beginner level 2</title>
+</head>
+<body>
+    <div id="content">
+        <div id="left-side">
+            <div id="left-logo" class="separate-box">
+                <a href="#"><img src="images/logo.png" alt="left"></a>
+            </div>
+            <div id="search" class="separate-box">
+                <form name="search" action="#" onsubmit="return false" method="get">
+                    <input id="search-text" type="text" name="search" value="">
+                    <input id="search-button" type="image" src="images/loop.png" onclick="validSearch(this.form)">
+                </form>
+                <div id="search-error">
+                    <p>Search field is empty</p>
+                </div>
+            </div>
+            <div id="left-nav" class="separate-box">
+                <ul>
+                    <li class="left-list-item" id="first-list-item">
+                        <a href="#"><img src="images/left_nav_bullet.png" alt="+">home</a>
+                        <div class="pop-box">
+                            <div class="pop-title"></div>
+                        </div>
+                    </li>
+                    <li class="left-list-item">
+                        <a href="#"><img src="images/left_nav_bullet.png" alt="+">features</a>
+                        <div class="pop-box">
+                            <div class="pop-title"></div>
+                        </div>
+                    </li>
+                    <li class="left-list-item">
+                        <a href="#"><img src="images/left_nav_bullet.png" alt="+">gallery</a>
+                        <div class="pop-box">
+                            <div class="pop-title"></div>
+                        </div>
+                    </li>
+                    <li class="left-list-item">
+                        <a href="#"><img src="images/left_nav_bullet.png" alt="+">blog</a>
+                        <div class="pop-box">
+                            <div class="pop-title"></div>
+                        </div>
+                    </li>
+                    <li class="left-list-item">
+                        <a href="#"><img src="images/left_nav_bullet.png" alt="+">contact</a>
+                        <div class="pop-box">
+                            <div class="pop-title"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="categories" class="separate-box">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Backgrounds<span>(11)</span></a></li>
+                    <li class="odd"><a href="#">Backgrounds<span>(11)</span></a></li>
+                    <li><a href="#">Websites<span>(11)</span></a></li>
+                    <li class="odd"><a href="#">Websites<span>(11)</span></a></li>
+                    <li><a href="#">Photography<span>(11)</span></a></li>
+                    <li class="odd"><a href="#">Photography<span>(11)</span></a></li>
+                    <li><a href="#">Vectorized<span>(11)</span></a></li>
+                    <li class="odd"><a href="#">Vectorized<span>(11)</span></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="latest-tweets" class="separate-box">
+                <h2>Latest tweets</h2>
+
+
+            </div>
+            <div id="follow-social" class="separate-box">
+                <h2>Follow me</h2>
+                <ul>
+                    <li id="social1"><a href="#"></a></li>
+                    <li id="social2"><a href="#"></a></li>
+                    <li id="social3"><a href="#"></a></li>
+                    <li id="social4"><a href="#"></a></li>
+                    <li id="social5"><a href="#"></a></li>
+                    <li id="social6"><a href="#"></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="follow-me">
+                <h2>Follow me</h2>
+                <ul>
+                    <li class="follow-img"><a href="#"><img src="images/follow_me.png" alt="image"></a></li>
+                    <li class="follow-me-mid follow-img"><a href="#"><img src="images/follow_me.png" alt="image"></a></li>
+                    <li class="follow-img"><a href="#"><img src="images/follow_me.png" alt="image"></a></li>
+                    <li class="follow-img"><a href="#"><img src="images/follow_me.png" alt="image"></a></li>
+                    <li class="follow-me-mid follow-img"><a href="#"><img src="images/follow_me.png" alt="image"></a></li>
+                    <li class="follow-img"><a href="#"><img src="images/follow_me.png" alt="image"></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="left-stripe"></div>
+            <div id="right-stripe"></div>
+            <div id="top-quote">
+                <div id="top-quote-text">
+                    <p id="quote0" class="hidden-quote">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies.
+                    </p>
+                    <p id="quote1" class="hidden-quote"> Random quote 2 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies.randomaizer 222Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies.randomaizer 222Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies.randomaizer 222Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies.
+                    </p>
+                    <p id="quote2" class="hidden-quote"> Random quote 3 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies.
+                    </p>
+                </div>
+            </div>
+            <div id="slider-all">
+                <div id="main-image">
+                    <div id="wrapper">
+                        <div class="slider-wrapper theme-default">
+                            <div id="slider" class="nivoSlider">
+                                <img src="images/img3.jpg" alt="">
+                                <img src="images/img1.jpg" alt="" title="#htmlcaption">
+                                <img src="images/img2.jpg" alt="">
+                                <img src="images/img4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="featured-pages">
+                <h1>featured pages</h1>
+                <div id="main-boxes">
+                    <div class="main-box main-box-left">
+                        <div class="main-box-image">
+                            <a class="fancybox" rel="group" href="images/main_box_image.png"><img src="images/main_box_image.png" alt="image"></a>
+                        </div>
+                        <p class="description">Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames</p>
+                        <div class="main-button">
+                            <button class="read-more" type="button"><span><span>read more</span></span></button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="main-box">
+                        <div class="main-box-image">
+                            <a class="fancybox" rel="group" href="images/main_box_image.png"><img src="images/main_box_image.png" alt="image"></a>
+                        </div>
+                        <p class="description">Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames
+                            Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames
+                            Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames
+                            Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames
+                        </p>
+                        <div class="main-button">
+                            <button class="read-more" type="button"><span><span>read more</span></span></button>                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="bot-left-box" class="main-box main-box-left">
+                        <div class="main-box-image">
+                            <a class="fancybox" rel="group" href="images/main_box_image.png"><img src="images/main_box_image.png" alt="image"></a>
+                        </div>
+                        <p class="description">Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames
+                            Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames
+                        </p>
+                        <div class="main-button">
+                            <button class="read-more" type="button"><span><span>read more</span></span></button>                        </div>
+                    </div>
+                    <div class="main-box">
+                        <div class="main-box-image">
+                            <a class="fancybox" rel="group" href="images/main_box_image.png"><img src="images/main_box_image.png" alt="image"></a>
+                        </div>
+                        <p class="description">Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames</p>
+                        <div class="main-button">
+                            <button class="read-more" type="button"><span><span>read more</span></span></button>                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#recent-posts"><span>recent posts</span></a>
+                            <div class="main-nav-triangle"></div>
+                        </li>
+                        <li>
+                            <a href="#news"><span>news</span></a>
+                            <div class="main-nav-triangle"></div>
+                        </li>
+                        <li>
+                            <a href="#galleries"><span>galleries</span></a>
+                            <div class="main-nav-triangle"></div>
+                        </li>
+                        <li>
+                            <a href="#people"><span>people</span></a>
+                            <div class="main-nav-triangle"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tabs">
+                    <div id="recent-posts">
+                        <div class="post">
+                            <div class="post-image">
+                                <img src="images/post_image.png" alt="img">
+                            </div>
+                            <p class="post-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque
+                                habitant morbi tristique senectus et netus et male&shy;suada fames
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque
+                                habitant morbi tristique senectus et netus et male&shy;suada fames
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque
+                                habitant morbi tristique senectus et netus et male&shy;suada fames
+                            </p>
+                            <div class="post-more">
+                                <p>Read more</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="post">
+                            <div class="post-image">
+                                <img src="images/post_image.png" alt="img">
+                            </div>
+                             <p class="post-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque
+                                habitant morbi tristique senectus et netus et male&shy;suada fames
+                             </p>
+                            <div class="post-more">
+                                <p>Read more</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="post" id="last-post">
+                            <div class="post-image">
+                                <img src="images/post_image.png" alt="img">
+                            </div>
+                            <p class="post-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque
+                                habitant morbi tristique senectus et netus et male&shy;suada fames
+                            </p>
+                            <div class="post-more">
+                                <p>Read more</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div id="news">
+                        <p>Here will be the news</p>
+                    </div>
+                    <div id=galleries>
+                        <p>Here will be the galleries </p>
+                    </div>
+                    <div id="people">
+                        <p>Here will be the people</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        <div id="footer-background">
+            <div id="footer-content">
+                <div id="footer-left">
+                    <h3>About Left theme</h3>
+                    <p>Pellentesque habitant morbi tristique senec&shy;tus et netus et malesuada fames Pellen&shy;tesque
+                        habitant morbi tristique senectus et netus et malesuada fames
+                    </p>
+                </div>
+                <div id="footer-right">
+                    <div id="footer-posts">
+                        <h3>Recent posts</h3>
+                        <ul>
+                            <li><a href="#">Pellentesque habitant morbi tristique.</a></li>
+                            <li><a href="#">Pellentesque habitant morbi tristiquemorbi tristique senectus et netus.</a></li>
+                            <li><a href="#">Pellentesque habitant morbi tristique.</a></li>
+                            <li><a href="#">Pellentesque habitant morbi tristiquemorbi tristique senectus et netus.</a></li>
+                        </ul>
+                    </div>
+                    <div id="photo-stream">
+                        <h3>Photo stream</h3>
+                        <ul>
+                            <li><a href="#"><img src="images/photo.png" alt="photo"></a></li>
+                            <li><a href="#"><img src="images/photo.png" alt="photo"></a></li>
+                            <li><a href="#"><img src="images/photo.png" alt="photo"></a></li>
+                            <li><a href="#"><img src="images/photo.png" alt="photo"></a></li>
+                            <li><a href="#"><img src="images/photo.png" alt="photo"></a></li>
+                            <li><a href="#"><img src="images/photo.png" alt="photo"></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div id="footer-bottom">
+                    <p>&copy; 2011 Ansimuz. All Rights Reserved. Powered by WordPress.</p>
+                    <div id="to-top">
+                        <a href="#content">To top <img src="images/to_top.png" alt="^"></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
